@@ -53,28 +53,9 @@ ERAtlas/
 │   ├── entre-rios-data.json             # Dataset estructurado en formato JSON
 │   └── departamentos-entre-rios.geojson # Geometrías oficiales IGN
 └── assets/
-    └── images/                          # Ilustraciones territoriales
+    └── icons                            # Iconos
 ```
 
----
-
-## 4. Ejecución en Entorno Local
-
-La aplicación está diseñada para funcionar inmediatamente mediante dos modalidades:
-
-### Modalidad directa (sin servidor)
-Abra el archivo `index.html` haciendo doble clic en su explorador de archivos. El mapa, los datos y las interacciones cargan de forma inmediata gracias al dataset precargado en `data/dataset.js`.
-
-### Modalidad con servidor local
-Si prefiere servir los archivos mediante un servidor web local:
-```bash
-python3 -m http.server 8080
-```
-Luego ingrese en el navegador a: `http://localhost:8080`
-
----
-
-## 5. Actualización de Contenidos
+## 4. Actualización de Contenidos
 
 - **Modificación de indicadores o textos:** Puede editarse el archivo `data/dataset.js` o `data/entre-rios-data.json`.
-- **Galería de imágenes:** Las referencias de imagen y epígrafes se gestionan desde el arreglo de galería dentro del dataset, enlazando los archivos ubicados en `assets/images/`.
